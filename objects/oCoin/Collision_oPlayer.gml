@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Destroy self when collide with Player
 
 instance_destroy();
 

@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Destroy self when hit Wall
+
 instance_destroy();

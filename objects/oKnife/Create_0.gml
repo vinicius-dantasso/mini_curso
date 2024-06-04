@@ -1,5 +1,10 @@
 /// @description Insert description here
 
-speed = 5;
+// Set the default speed
+speed = 10;
+
+// Set the direction it will go
 direction = point_direction(x,y,mouse_x,mouse_y);
-alarm[0] = 60*2; // alarme que irá alarmar em 2 segundos
+
+// Set the lifespan of the object
+alarm[0] = 60; // timer que irá alarmar em 1 segundo
