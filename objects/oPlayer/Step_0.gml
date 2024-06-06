@@ -12,6 +12,24 @@ if(_horizontal_dir != 0)
 	spd = 3.0;
 else
 	spd = 0.0;
+
+// Change Player Sprite
+switch(_horizontal_dir) {
+	case -1: 
+		looking_direction = -1;
+		sprite_index = sPlayer_Run_Right;
+	break;
+	case 1:
+		looking_direction = 1;
+		sprite_index = sPlayer_Run_Left;
+	break;
+	default:
+		if(looking_direction == -1)
+			sprite_index = sPlayer_Idle_Left;
+		else
+			sprite_index = sPlayer_Idle_Right;
+	break;
+}
 	
 // Calculates the line between Player speed and where we need to move
 horizontal_speed = lengthdir_x(spd, _dir);
@@ -28,6 +46,8 @@ x += horizontal_speed;
 
 // Apply gravity
 vertical_speed += grav;
+if(vertical_speed >= max_grav)
+	vertical_speed = max_grav;
 
 // If on ground and press to jump, Jump
 if(on_ground && _vertical_dir) {
@@ -50,7 +70,8 @@ y += vertical_speed;
 // Shoot knife
 var _shoot = mouse_check_button_pressed(mb_left);
 
-if(_shoot) {
+if(_shoot and alarm[0] <= 0) {
+	alarm[0] = 30;
 	var _knife = instance_create_depth(x,y,0,oKnife);	
 }
 

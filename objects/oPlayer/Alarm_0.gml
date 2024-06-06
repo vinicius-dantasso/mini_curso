@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description Shoot Cooldown
 
-room_restart();
+

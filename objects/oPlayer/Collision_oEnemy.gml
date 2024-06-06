@@ -1,4 +1,5 @@
 /// @description Insert description here
 
-room_restart();
+if(other.state != ENEMYSTATE.DEAD)
+	room_restart();
 

@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayer",
-    "path":"sprites/sPlayer/sPlayer.yy",
+    "name":"sPlayer_Idle_Right",
+    "path":"sprites/sPlayer_Idle_Right/sPlayer_Idle_Right.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sPlayer_Idle_Right",
+    "path":"sprites/sPlayer_Idle_Right/sPlayer_Idle_Right.yy",
+  },
   "visible":true,
 }

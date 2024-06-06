@@ -32,9 +32,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemy",
-    "path":"sprites/sEnemy/sEnemy.yy",
+    "name":"sEnemy_Run_Left",
+    "path":"sprites/sEnemy_Run_Left/sEnemy_Run_Left.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sEnemy_Run_Right",
+    "path":"sprites/sEnemy_Run_Right/sEnemy_Run_Right.yy",
+  },
   "visible":true,
 }
